@@ -129,7 +129,7 @@ function plot(from, to, add, after, by, ease)
         table.insert(heightValues, v)
     end
 
-    imgui.PlotLines("", heightValues, #heightValues, 0, "easing type: " .. ease, from, to, { 250, 150 })
+    imgui.PlotLines("", heightValues, #heightValues, 0, "easing type: " .. ease, 0, 1, { 250, 150 })
 
     imgui.End()
 end
